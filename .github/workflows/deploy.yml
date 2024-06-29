@@ -1,11 +1,9 @@
 name: Deploy
-
 on:
   push:
     branches:
       - main
   workflow_dispatch:
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -15,5 +13,5 @@ jobs:
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: vuH3XwfuKYOdSw-GzmztWHyWWrdVsQYVQNAn4iVq
+          accountId: 3b6e75563108d4363048326f77e34d98
